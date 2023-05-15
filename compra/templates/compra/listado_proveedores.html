@@ -2,7 +2,7 @@
 <html>
 
     <head>
-        <title>Listado de Productos</title>
+        <title>Listado de Proveedores</title>
         <link rel="stylesheet" href="{% static 'css/bootstrap.min.css' %}">
     </head>
      
@@ -13,20 +13,18 @@
                 <tr>
                     <th>ID</th>
                     <th>Nombre</th>
-                    <th>Precio</th>
-                    <th>Stock_actual</th>
-                    <th>proveedor</th>
+                    <th>Apellido</th>
+                    <th>dni</th>
                 </tr>
 
                 {% for producto in listado_productos %}
 
                     <tr>
 
-                        <td>{{ producto.id }}</td>
+                        <td>{{ proveedores.id }}</td>
                         <td>{{ producto.nombre }}</td>
-                        <td>{{ producto.precio }}</td>
-                        <td>{{  producto.stock_actual  }}</td> 
-                        <td>{{ producto.proveedor }}</td> 
+                        <td>{{ producto.apellido }}</td>
+                        <td>{{  producto.dni  }}</td>  
                         <td>
                         
                            |

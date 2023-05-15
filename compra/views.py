@@ -8,6 +8,13 @@ def listado_productos(request):
     }
     return render(request,"compra/listado_productos.html",context)
 
+def listado_proveedores(request):
+    lista_proveedores=Proveedor.objects.all()
+    context={
+        "listado_proveedores":lista_proveedores
+    }
+    return render(request,"compra/listado_proveedores.html",context)
+
 def agregar_producto(request):
     lista_proveedores = Proveedor.objects.all()
 
