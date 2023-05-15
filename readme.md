@@ -19,4 +19,5 @@
 ![ejemploORM](https://github.com/Loboxos/proyectoIntegradorALK/assets/100051726/9598fa24-7a4c-4439-9291-de6d418e52ab)
 
 
--manejare las urls creando una la app llamado api 
+-manejare las urls que devuelva datos de la base de datos 
+en formato json con la app llamado api 

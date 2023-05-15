@@ -6,5 +6,5 @@ def listado_productos(request):
     context={
         "listado_productos":lista_productos
     }
-
+    return render(request,"compra/listado_productos.html",context)
 # Create your views here.
