@@ -1,4 +1,5 @@
 from django.db import models
+
 class Proveedor(models.Model):
     nombre=models.CharField(max_length=50)
     apellido=models.CharField(max_length=50)
@@ -10,7 +11,7 @@ class Proveedor(models.Model):
 class Producto(models.Model):
     nombre=models.CharField(max_length=25)
     precio=models.FloatField(default=0)
-    stock_actual=models.ImageField(default=0)
+    stock_actual=models.IntegerField(default=0)
     proveedor=models.ForeignKey(Proveedor,related_name="proveedor",on_delete=models.CASCADE)
     
     def __str__(self):
