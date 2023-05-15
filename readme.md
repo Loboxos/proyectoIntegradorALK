@@ -23,3 +23,10 @@
 en formato json con la app llamado api 
 
 -tambien usaremos jinja para sistema de templates``` pip install jinja2```
+
+-usamos bootstrap
+
+-algunos urls:    localhost:8000/compra/listado_productos/ [name='listado_productos']
+                  localhost:8000/compra/listado_proveedores/ [name='listado_proveedores']
+                  localhost:8080/compra/productos/nuevo [name='agregar_producto']
+                  localhost:8080/compra/proveedores/nuevo[name='agregar_proveedores']
