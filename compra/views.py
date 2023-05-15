@@ -33,7 +33,7 @@ def agregar_producto(request):
             nombre=nombre_producto,
             precio=precio_producto,
             stock_actual=stock_actualP,
-            proveedor=proveedor_id
+            proveedor_id=proveedor_id
         )
 
     return render(
@@ -45,10 +45,10 @@ def agregar_proveedor(request):
 
     if request.POST:
         nombre_proveedor = request.POST["nombre"]
-        apellido_proveedor = request.POST["precio"]
+        apellido_proveedor = request.POST["apellido"]
         dni_proveedor = request.POST["dni"]
 
-        Producto.objects.create(
+        Proveedor.objects.create(
             nombre=nombre_proveedor,
             apellido=apellido_proveedor,
             dni=dni_proveedor

@@ -8,8 +8,9 @@
      
     <body>
         <div class="container">
-            
-            <table class="table table-dark">
+        
+            <br><br>
+            <table class="table table-primary">
                 <tr>
                     <th>ID</th>
                     <th>Nombre</th>
@@ -25,16 +26,15 @@
                         <td>{{ proveedores.nombre }}</td>
                         <td>{{ proveedores.apellido }}</td>
                         <td>{{ proveedores.dni  }}</td>  
-                        <td>
-                        
-                           |
-
-                        </td>
+                      
                     </tr>
 
                 {% endfor %}
-
+          
             </table>
+            <a href="{% url 'agregar_proveedor' %}">
+                Agregar Proveedor
+            </a>
         </div>
     </body>
 
