@@ -1,0 +1,32 @@
+<html>
+
+    <head>
+        <title>Nuevo Proveedor</title>
+    </head>
+
+    <body>
+
+        <form method="post">
+
+            {% csrf_token %}
+
+            Nombre: <input type="text" name="nombre">
+            <br><br>
+            Apellido: <input type="text" name="apellido">
+            <br><br>
+            dni: <input type="number" name="dni">
+            <br><br>
+
+            <br><br>
+                  
+            <input type="submit" value="Guardar registro">
+          
+        <br><br>
+        <a href="{% url 'listado_proveedores' %}">
+            Ir a la lista
+        </a>
+        </form>
+
+    </body>
+
+</html>
