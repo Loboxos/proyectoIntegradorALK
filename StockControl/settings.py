@@ -55,6 +55,16 @@ MIDDLEWARE = [
 ROOT_URLCONF = 'StockControl.urls'
 
 TEMPLATES = [
+      {
+        'BACKEND': 'django.template.backends.jinja2.Jinja2',
+        'DIRS': ["templates"],
+        'APP_DIRS': True,
+        'OPTIONS': {
+            'environment': 'StockControl.jinja2.ini_jinja2',
+            'auto_reload': DEBUG,
+            'autoescape': True
+        },
+    },
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
         'DIRS': [],

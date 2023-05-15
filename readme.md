@@ -21,3 +21,5 @@
 
 -manejare las urls que devuelva datos de la base de datos 
 en formato json con la app llamado api 
+
+-tambien usaremos jinja para sistema de templates``` pip install jinja2```
