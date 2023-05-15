@@ -14,8 +14,8 @@
                     <th>ID</th>
                     <th>Nombre</th>
                     <th>Precio</th>
-                    <th>Marca</th>
-                    <th>acciones</th>
+                    <th>Stock_actual</th>
+                    <th>proveedor</th>
                 </tr>
 
                 {% for producto in listado_productos %}
@@ -25,7 +25,8 @@
                         <td>{{ producto.id }}</td>
                         <td>{{ producto.nombre }}</td>
                         <td>{{ producto.precio }}</td>
-                        <td>{{ producto.marca }}</td> 
+                        <td>{{ producto.stock_actual }}</td> 
+                        <td>{{ producto.proveedor }}</td> 
                         <td>
                         
                            |
