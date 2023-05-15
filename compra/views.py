@@ -38,7 +38,7 @@ def agregar_producto(request):
 
     return render(
         request,
-        "compra/agregar_producto.html",
+        "compra/nuevo_producto.html",
         context
     )
 def agregar_proveedor(request):
@@ -56,7 +56,7 @@ def agregar_proveedor(request):
 
     return render(
         request,
-        "compra/agregar_proveedor.html"
+        "compra/nuevo_proveedor.html"
     )
 
 # Create your views here.
